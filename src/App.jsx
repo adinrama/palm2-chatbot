@@ -5,7 +5,7 @@ const App = () => {
   const [messages, setMessages] = useState([]);
 
   const getResponse = async () => {
-    const response = await fetch(`http://localhost:8000/prompt/${text}`);
+    const response = await fetch(`http://0.0.0.0:8000/prompt/${text}`);
     const data = await response.json();
     console.log("data", data);
     setMessages([
